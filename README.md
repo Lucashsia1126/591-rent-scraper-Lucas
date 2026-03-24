@@ -6,7 +6,7 @@
 
 **另外，這個小工具成功讓我在七天內找到位於租屋市場競爭的北市、租金低於行情且不錯的的房子！**
 
-<img src="https://github.com/user-attachments/assets/45c73d0d-bd59-4286-b468-b61f64931af1" alt="result" width="600"/>
+<img src="docs/images/execution-result.png" alt="execution-result" width="600"/>
 
 ## 功能介紹
 
@@ -39,14 +39,13 @@ npx playwright install
    點擊頻道名稱旁邊的 ⚙️（編輯頻道）→ 點選左側選單的 **整合**
 
 - **新增 Webhook**
-
   - 點選 **建立 Webhook**
   - 你可以：
     - 幫 Webhook 命名（例如：591 Bot）
     - 選擇要發送訊息的頻道
   - 然後點擊 **複製 Webhook 網址**（這就是你要填入 .env 的網址）
 
-  ![webhook-img](https://github.com/user-attachments/assets/0e886d70-bc26-489a-9baa-29563266bccc)
+  ![webhook-img](docs/images/webhook.png)
 
 - **貼到 `.env` 中**  
    先將專案根目錄的 `.env.example` 檔案改名為 `.env`，再貼上剛複製的網址
@@ -57,13 +56,13 @@ npx playwright install
 ### 2. 設置篩選條件網址
 
 - 去 591 租屋網設置想要獲取通知的設定  
-  ![591-filter](https://github.com/user-attachments/assets/8a492220-0516-4d11-a384-f723fe1067db)
+  ![591-filter](docs/images/591-filter.png)
 
 - 往下滑，並設定排序為 **最新**  
-   ![591-sort-by](https://github.com/user-attachments/assets/305d39a6-2b60-40e5-b52c-9c19eb08a8ac)
+   ![591-sort-by](docs/images/591-sort-by.png)
 
 - 複製網址  
-   ![591-url](https://github.com/user-attachments/assets/ae33e03b-8457-422a-bf2e-1cf46da7ce3f)
+   ![591-url](docs/images/591-url.png)
 
 - 貼到 `config.json` 中  
    打開專案根目錄的 `config.json`，貼上剛複製的網址，如果想要有多個篩選條件（例如：台北市、新北市），可以重複以上步驟，並按照下面格式貼上網址
@@ -96,7 +95,7 @@ node index.js
 
 你會看到終端機顯示爬蟲執行狀況，並於有新物件時推播至 Discord
 
-<img src="https://github.com/user-attachments/assets/729a9455-8cdf-4246-8661-b4a010a1158f" alt="console-output" width="700"/>
+<img src="docs/images/console-output.png" alt="console-output" width="700"/>
 
 此為設定一分鐘執行一次的終端機顯示結果
 
