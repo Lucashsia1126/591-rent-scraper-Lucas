@@ -37,5 +37,5 @@ async function checkForNewListings() {
   saveHistory(history);
 }
 
- setInterval(checkForNewListings, intervalMs);
+// setInterval(checkForNewListings, intervalMs);
 checkForNewListings();
