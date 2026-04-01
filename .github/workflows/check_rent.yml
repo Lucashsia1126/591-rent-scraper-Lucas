@@ -1,0 +1,30 @@
+name: 591 租屋自動監控
+
+on:
+  schedule:
+    - cron: '*/10 * * * *' # 每 10 分鐘執行一次
+  workflow_dispatch: # 允許手動點擊執行
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 讀取原始碼
+        uses: actions/checkout@v4
+
+      - name: 設定 Node.js環境
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 安裝必要零件
+        run: |
+          npm install
+          npx playwright install chromium
+
+      - name: 執行爬蟲啟動
+        env:
+          # 這裡會讀取你在第一步設定的秘密鑰匙
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: node index.js
