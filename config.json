@@ -1,11 +1,7 @@
 {
   "urls": [
-    {
-      "name": "基隆市租屋",
-      "url": "https://rent.591.com.tw/list?region=2&price=7000$_13000$&sort=posttime_desc&section=15,14,16,18,13&acreage=6$_$&option=cold"
-    }
+    "https://rent.591.com.tw/list?region=2&price=7000$_13000$&sort=posttime_desc&section=15,14,16,18,13&acreage=6$_$&option=cold"
   ],
-  "intervalMinutes": 30,
-  "fetchCount": 15,
-  "discordWebhookUrl": "https://discord.com/api/webhooks/1488875853365514280/TFRxaI8Do8s3mOkEZusSqzESOlrUjg5klKXQ6kzGC7htzGYg1tfGGdxOvI2Hot8KnjwU"
+  "intervalMinutes": 10,
+  "fetchCount": 15
 }
