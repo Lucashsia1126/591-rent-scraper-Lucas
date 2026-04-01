@@ -1,6 +1,6 @@
 {
   "urls": [
-    "https://rent.591.com.tw/list?region=2&price=7000$_13000$&sort=posttime_desc&section=15,14,16,18,13&acreage=6$_$&option=cold"
+    "https://rent.591.com.tw/list?region=2&price=7000$_25000$&sort=posttime_desc&section=15,14,16,18,13&acreage=6$_$&option=cold"
   ],
   "intervalMinutes": 10,
   "fetchCount": 15
