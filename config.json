@@ -3,5 +3,5 @@
     "https://rent.591.com.tw/list?region=6&metro=278&price=18000$_28000$&layout=2&sort=posttime_desc&station=66321&shape=2&option=cold&notice=not_cover"
   ],
   "intervalMinutes": 10,
-  "fetchCount": 15
+  "fetchCount": 30
 }
